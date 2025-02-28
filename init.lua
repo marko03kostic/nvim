@@ -24,6 +24,8 @@ require('pckr').add {
   {'morhetz/gruvbox'},
   {'VonHeikemen/lsp-zero.nvim'},
   {'neovim/nvim-lspconfig'},
+  {'nvim-lua/plenary.nvim'},
+  {'nvim-telescope/telescope.nvim'},
   {'hrsh7th/cmp-nvim-lsp'},
   {'hrsh7th/nvim-cmp'},
   {'hrsh7th/cmp-buffer'},
@@ -110,6 +112,8 @@ require('lspconfig').zls.setup({
     },
   },
 })
+
+require('lspconfig').ts_ls.setup({ })
 
 -- Auto-save on text changes (after typing stops)
 vim.api.nvim_create_autocmd({"TextChanged", "TextChangedI"}, {
