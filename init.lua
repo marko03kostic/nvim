@@ -3,4 +3,4 @@ vim.g.maplocalleader = "\\"
 
 require("config.lazy")
 require("config.nvim-tree")
-require("config.nvim-telescope")
+require("config.telescope")
