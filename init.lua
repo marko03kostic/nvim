@@ -9,6 +9,9 @@ vim.api.nvim_set_keymap('n', '<leader>Y', '"+yy', { noremap = true, silent = tru
 vim.api.nvim_set_keymap('n', '<leader>p', '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>P', '"+P', { noremap = true, silent = true })
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 require("config.lazy")
 require("config.lualine")
 require("config.material")
