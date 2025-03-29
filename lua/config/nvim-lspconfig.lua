@@ -9,5 +9,5 @@ vim.api.nvim_set_keymap('n', '<C-k>', '<Cmd>lua vim.lsp.buf.signature_help()<CR>
 vim.api.nvim_set_keymap('n', '[d', '<Cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', { desc = 'Go to previous diagnostic', noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', ']d', '<Cmd>lua vim.lsp.diagnostic.goto_next()<CR>', { desc = 'Go to next diagnostic', noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'gl', '<Cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', { desc = 'Show line diagnostics', noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>f', '<Cmd>lua vim.lsp.buf.formatting()<CR>', { desc = 'Format buffer', noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>f', '<Cmd>lua vim.lsp.buf.format()<CR>', { desc = 'Format buffer', noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'gi', '<Cmd>lua vim.lsp.buf.implementation()<CR>', { desc = 'Go to implementation', noremap = true, silent = true })
