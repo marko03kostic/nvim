@@ -22,6 +22,7 @@ vim.api.nvim_set_keymap('n', '<Leader>l', '<C-w>l', { noremap = true, silent = t
 
 require("config.lazy")
 require("config.lualine")
+require("config.mason")
 require("config.material")
 require("config.nvim-tree")
 require("config.telescope-fzf-finder")
