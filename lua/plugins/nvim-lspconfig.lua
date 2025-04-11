@@ -46,5 +46,6 @@ return {
 	})
 
 	require('lspconfig').ts_ls.setup({ })
+	require('lspconfig').jsonls.setup({ })
     end,
 }
