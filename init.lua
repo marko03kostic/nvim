@@ -20,6 +20,13 @@ vim.api.nvim_set_keymap('n', '<Leader>k', '<C-w>k', { noremap = true, silent = t
 
 vim.api.nvim_set_keymap('n', '<Leader>l', '<C-w>l', { noremap = true, silent = true })
 
+vim.opt.tabstop = 4       -- Set tab width to 4 spaces
+vim.opt.shiftwidth = 4    -- Set indentation to 4 spaces
+vim.opt.expandtab = true  -- Use spaces instead of tabs
+vim.opt.softtabstop = 4   -- Set number of spaces to insert with <Tab>
+vim.opt.list = true                        -- Enable the display of invisible characters
+vim.opt.listchars = { tab = "» ", space = "·" } -- Set custom symbols for tab and space
+
 require("config.lazy")
 require("config.lualine")
 require("config.mason")
